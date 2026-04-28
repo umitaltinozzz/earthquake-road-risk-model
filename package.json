@@ -1,0 +1,7 @@
+{
+  "name": "earthquake-road-risk-model",
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^19.0.10"
+  }
+}

@@ -1,0 +1,7 @@
+aiosqlite
+fastapi
+pydantic
+python-dotenv
+requests
+sqlalchemy
+uvicorn
