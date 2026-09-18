@@ -1,11 +1,18 @@
 # Earthquake Road Risk Model
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111)
-![TypeScript](https://img.shields.io/badge/TypeScript-4.9-3178C6?logo=typescript&logoColor=fff)
-![FastAPI](https://img.shields.io/badge/FastAPI-Prototype-009688?logo=fastapi&logoColor=fff)
-![Leaflet](https://img.shields.io/badge/Leaflet-GIS_Map-199900?logo=leaflet&logoColor=fff)
-![SQLite](https://img.shields.io/badge/SQLite-Local_Data-003B57?logo=sqlite&logoColor=fff)
-![License](https://img.shields.io/badge/License-MIT-green)
+**Prototype for modeling earthquake-driven building collapse risk and likely road blockages in Istanbul using open data.**
+
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-Prototype-009688?logo=fastapi&logoColor=fff&style=for-the-badge)
+![Leaflet](https://img.shields.io/badge/Leaflet-GIS_Map-199900?logo=leaflet&logoColor=fff&style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-Local_Data-003B57?logo=sqlite&logoColor=fff&style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Archived-gray?style=for-the-badge)
+
+---
+
+## Overview
 
 A GIS prototype for estimating earthquake-driven building collapse risk and likely road blockages in Istanbul using open-source urban data.
 
@@ -17,7 +24,9 @@ After a major Istanbul earthquake, damaged or collapsed buildings can block stre
 
 The prototype stores building observations such as floor count, building age, structural material, slope, slope direction, and ground type. The backend calculates a simplified risk score and debris spread area, while the map interface visualizes buildings, assembly areas, debris impact zones, and route risk.
 
-This is a portfolio prototype, not a certified engineering or disaster-response model.
+## Project Status
+
+Archived portfolio prototype. It is not a certified engineering or disaster-response model; local databases, environment files and dependency folders are excluded from version control.
 
 ## Features
 
@@ -30,16 +39,14 @@ This is a portfolio prototype, not a certified engineering or disaster-response 
 
 ## Tech Stack
 
-- **Frontend:** React, TypeScript, React Leaflet, Axios
-- **Backend:** FastAPI, SQLAlchemy, SQLite
-- **Mapping:** OpenStreetMap tiles through Leaflet
-- **Data:** Local SQLite database for prototype records
+| Layer | Technology |
+|---|---|
+| Frontend | React, TypeScript, React Leaflet, Axios |
+| Backend | FastAPI, SQLAlchemy, SQLite |
+| Mapping | OpenStreetMap tiles through Leaflet |
+| Data | Local SQLite database for prototype records |
 
-## Repository Status
-
-This repository is prepared for portfolio review. Local databases, environment files, dependency folders, and cache directories are intentionally excluded from version control.
-
-## Local Development
+## Getting Started
 
 ```bash
 # Backend
@@ -54,6 +61,22 @@ npm start
 
 Create a `.env` file from `.env.example` if you want to override the local database URL.
 
+## Project Structure
+
+```
+earthquake-road-risk-model/
+├── backend/
+│   ├── types/
+├── frontend/
+│   ├── deprem-harita/
+│   ├── public/
+├── LICENSE
+├── README.md
+├── package-lock.json
+├── package.json
+├── tsconfig.json
+```
+
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+[MIT License](./LICENSE)
